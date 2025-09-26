@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f0f8ff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 30px;
+  min-height: 100vh;
+}
+
+.card {
+  width: 500px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #004080;
+}
+
+.instrucciones {
+  background: #e6ffe6;
+  border: 1px solid #b3ffb3;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 15px 0;
+}
+
+.lista {
+  list-style-type: decimal;
+  padding-left: 25px;
+  margin: 15px 0;
+}
+
+.lista li {
+  padding: 6px 0;
+  font-weight: bold;
+  color: #333;
+  border-bottom: 1px dashed #ccc;
+}
+
+.resultado {
+  background: #eaf3ff;
+  border: 1px solid #80b3ff;
+  padding: 12px;
+  border-radius: 5px;
+  font-weight: bold;
+  color: #004080;
+  margin-top: 12px;
+}
+
+.btn {
+  background: #007bff;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn:hover {
+  background: #0056b3;
+}
+
+footer {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: #666;
+}

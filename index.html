@@ -1,0 +1,63 @@
+<html>
+
+<head>
+
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Quinta Serie - Práctico 9 · Ejercicio 09</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="card">
+    <h2>🏷️ Ejercicio 09: Imprimir números y sumar</h2>
+
+    <div class="instrucciones">
+      <h3>📋 Instrucciones</h3>
+      <p>Este ejercicio imprime los números del <b>1 al 10</b> y además muestra la <b>suma total</b> usando un acumulador dentro de un bucle <code>for</code>.</p>
+    </div>
+
+   
+    <ul id="listaNumeros" class="lista"></ul>
+
+   
+    <div id="resultadoSuma" class="resultado">
+      Aquí se mostrará la suma total.
+    </div>
+
+    <button id="btnEjecutar" class="btn" type="button">¡Ejecutar!</button>
+
+    <footer>Curso de JavaScript · Enseñanza Media | Ejercicio 09</footer>
+  </div>
+
+ 
+  <script>
+    function generarListaConSuma() {
+      let lista = document.getElementById('listaNumeros');
+      let resultado = document.getElementById('resultadoSuma');
+
+      lista.innerHTML = ""; 
+      resultado.innerHTML = ""; 
+
+      let suma = 0; 
+
+      for (let i = 1; i <= 10; i++) {
+        let item = document.createElement('li');
+        item.innerText = "Número " + i;
+        lista.appendChild(item);
+
+        suma = suma + i; 
+        console.log("generarListaConSuma(): i = " + i + ", suma = " + suma);
+      }
+
+      resultado.innerText = "🔢 La suma total de los números del 1 al 10 es: " + suma;
+    }
+
+
+    let btnEjecutar = document.getElementById('btnEjecutar');
+    btnEjecutar.onclick = generarListaConSuma;
+
+
+    console.log('Script cargado: botón #btnEjecutar enlazado a generarListaConSuma; listo para ejecutar.');
+  </script>
+</body>
+</html>
